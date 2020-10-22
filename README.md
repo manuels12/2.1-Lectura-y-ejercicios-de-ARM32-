@@ -50,4 +50,26 @@ siguientes:
 - **C.** Indica acarreo en las operaciones aritméticas.
 - **V.** Desbordamiento aritmético.
 
+##### ** Lenguajes Ensamblador ** 
+El ensamblador es un lenguaje de bajo nivel que permite un control directo de
+la CPU y todos los elementos asociados. Cada línea de un programa ensamblador
+consta de una instrucción del procesador y la posición que ocupan los datos de esa
+instrucción.
+Desarrollar programas en lenguaje ensamblador es un proceso laborioso. El procedimiento es similar al de cualquier lenguaje compilado. Un conjunto de instrucciones
+y/o datos forman un módulo fuente. Este módulo es la entrada del compilador, que
+chequea la sintaxis y lo traduce a código máquina formando un módulo objeto. Finalmente, un enlazador (montador ó linker) traduce todas las referencias relativas a
+direcciones absolutas y termina generando el ejecutable.
+El ensamblador presenta una serie de ventajas e inconvenientes con respecto a
+otros lenguajes de más alto nivel. Al ser un lenguaje de bajo nivel, presenta como
+principal característica la flexibilidad y la posibilidad de acceso directo a nivel de
+registro. En contrapartida, programar en ensamblador es laborioso puesto que los
+programas contienen un número elevado de líneas y la corrección y depuración de
+éstos se hace difícil.
+Generalmente, y dado que crear programas un poco extensos es laborioso, el
+ensamblador se utiliza como apoyo a otros lenguajes de alto nivel para 3 tipos de
+situaciones:
+- Operaciones que se repitan un número elevado de veces.
+- Cuando se requiera una gran velocidad de proceso.
+- Para utilización y aprovechamiento de dispositivos y recursos del sistema.
+
 
