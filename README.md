@@ -28,5 +28,26 @@ Como son de propósito especial, tienen nombres alternativos.
 - **LR/R14.** Link Register ó Registro de Enlace. Almacena la dirección de
 retorno cuando una instrucción BL ó BLX ejecuta una llamada a una
 rutina.
+- **PC/R15.** Program Counter ó Contador de Programa. Es un registro que
+indica la posición donde está el procesador en su secuencia de instrucciones. Se incrementa de 4 en 4 cada vez que se ejecuta una instrucción,
+salvo que ésta provoque un salto.
+
+**Registro CPSR.** Almacena las banderas condicionales y los bits de control. Los
+bits de control definen la habilitación de interrupciones normales (I), interrupciones rápidas (F), modo Thumb 1
+(T) y el modo de operación de la CPU.
+Existen hasta 8 modos de operación, pero por ahora desde nuestra aplicación
+sólo vamos a trabajar en uno de ellos, el Modo Usuario. Los demás son modos
+privilegiados usados exclusivamente por el sistema operativo.
+Desde el Modo Usuario sólo podemos acceder a las banderas condicionales,
+que contienen información sobre el estado de la última operación realizada
+por la ALU. A diferencia de otras arquitecturas en ARMv6 podemos elegir
+si queremos que una instrucción actualice o no las banderas condicionales,
+poniendo una “s” detrás del nemotécnico 2
+. Existen 4 banderas y son las
+siguientes:
+- **N.** Se activa cuando el resultado es negativo.
+- **Z.** Se activa cuando el resultado es cero o una comparación es cierta.
+- **C.** Indica acarreo en las operaciones aritméticas.
+- **V.** Desbordamiento aritmético.
 
 
