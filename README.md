@@ -50,7 +50,7 @@ siguientes:
 - **C.** Indica acarreo en las operaciones aritméticas.
 - **V.** Desbordamiento aritmético.
 
-##### ** Lenguajes Ensamblador ** 
+##### **Lenguajes Ensamblador** 
 El ensamblador es un lenguaje de bajo nivel que permite un control directo de
 la CPU y todos los elementos asociados. Cada línea de un programa ensamblador
 consta de una instrucción del procesador y la posición que ocupan los datos de esa
