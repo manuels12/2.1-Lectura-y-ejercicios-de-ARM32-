@@ -1,3 +1,4 @@
+<code>
 .data
 var1 : .word 3
 puntero_var1 : .word var1
