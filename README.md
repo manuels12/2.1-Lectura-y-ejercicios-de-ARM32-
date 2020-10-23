@@ -88,6 +88,8 @@ ejecutado en una máquina determinada. Entre estos códigos comunes se encuentra
 las librerías del lenguaje. El encargado de unir el código del programa con el código
 de estas librerías es un programa llamado montador (linker) que genera el programa
 ejecutable.
+
+
 [Imagen](https://fulldevelopersite.files.wordpress.com/2015/10/sin-tc3adtulo.png)
 
  **Caracteristicas**
