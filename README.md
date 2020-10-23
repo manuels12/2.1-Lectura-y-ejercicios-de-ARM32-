@@ -100,6 +100,8 @@ menos significativos a cero). Los datos son modificables.
 o datos no modificables. Como todas las instrucciones son de 32 bits no hay
 que tener especial cuidado en que estén alineadas. Si tratamos de escribir en
 esta zona el ensamblador nos mostrará un mensaje de error.
+
+
 De estas dos secciones la única que obligatoriamente debe existir es la sección
 .text (o sección de código). 
 Un módulo fuente, como el del ejemplo, está formado por instrucciones, datos,
