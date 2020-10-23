@@ -72,7 +72,7 @@ situaciones:
 - Cuando se requiera una gran velocidad de proceso.
 - Para utilización y aprovechamiento de dispositivos y recursos del sistema.
 
-**Entorno**
+##### **Entorno**
 Los pasos habituales para hacer un programa (en cualquier lenguaje) son los
 siguientes: lo primero es escribir el programa en el lenguaje fuente mediante un editor de programas. El resultado es un fichero en un lenguaje que puede entender el
 usuario, pero no la máquina. Para traducirlo a lenguaje máquina hay que utilizar
