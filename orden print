@@ -1,4 +1,4 @@
-~~~
+  ~~~
 ( gdb ) print $r0 = 2
 $1 = 2
 ( gdb ) info registers r0 r1 r2 r3
@@ -6,4 +6,4 @@ r0 0x2 2
 r1 0xbefffe04 3204447748
 r2 0xbefffe0c 3204447756
 r3 0x8390 33680
-~~~
+     ~~~
