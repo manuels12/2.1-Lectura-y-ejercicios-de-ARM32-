@@ -148,3 +148,5 @@ Las macros y las constantes simbólicas son símbolos cuyo ámbito pertenece al
 preprocesador, a diferencia de las etiquetas que pertenecen al del ensamblador. Se
 especifican con las directivas .macro y .equ respectivamente y permiten que el código
 sea más legible y menos repetitivo.
+
+[enlace en línea](https://fulldevelopersite.files.wordpress.com/2015/10/sin-tc3adtulo.png)
