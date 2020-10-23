@@ -83,4 +83,32 @@ las librerías del lenguaje. El encargado de unir el código del programa con el
 de estas librerías es un programa llamado montador (linker) que genera el programa
 ejecutable
 
+###### **Caracteristicas**
+La principal característica de un módulo fuente en ensamblador es que existe
+una clara separación entre las instrucciones y los datos. La estructura más general
+de un módulo fuente es:
+
+- **Sección de datos.** Viene identificada por la directiva .data. En esta zona se
+definen todas las variables que utiliza el programa con el objeto de reservar
+memoria para contener los valores asignados. Hay que tener especial cuidado
+para que los datos estén alineados en palabras de 4 bytes, sobre todo después
+de las cadenas. Alinear significa rellenar con ceros el final de un dato para que
+el siguiente dato comience en una dirección múltiplo de 4 (con los dos bits
+menos significativos a cero). Los datos son modificables.
+
+-**Sección de código.** Se indica con la directiva .text, y sólo puede contener código
+o datos no modificables. Como todas las instrucciones son de 32 bits no hay
+que tener especial cuidado en que estén alineadas. Si tratamos de escribir en
+esta zona el ensamblador nos mostrará un mensaje de error.
+De estas dos secciones la única que obligatoriamente debe existir es la sección
+.text (o sección de código). 
+Un módulo fuente, como el del ejemplo, está formado por instrucciones, datos,
+símbolos y directivas. Las instrucciones son representaciones nemotécnicas del juego
+de instrucciones del procesador. Un dato es una entidad que aporta un valor numérico, que puede expresarse en distintas bases o incluso a través de una cadena.
+Los símbolos son representaciones abstractas que el ensamblador maneja en tiempo
+de ensamblado pero que en el código binario resultante tendrá un valor numérico
+concreto. Hay tres tipos de símbolos: las etiquetas, las macros y las constantes simbólicas. Por último tenemos las directivas, que sirven para indicarle ciertas cosas
+al ensamblador, como delimitar secciones, insertar datos, crear macros, constantes
+simbólicas, etc... Las instrucciones se aplican en tiempo de ejecución mientras que
+las directivas se aplican en tiempo de ensamblado.
 
