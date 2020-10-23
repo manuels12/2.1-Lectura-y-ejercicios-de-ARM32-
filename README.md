@@ -12,7 +12,9 @@ arquitectura licenciable, quiere decir que la empresa desarrolladora ARM Holding
 diseña la arquitectura, pero son otras compañías las que fabrican y venden los chips,
 llevándose ARM Holdings un pequeño porcentaje por la licencia.
  
-#### **Registros**
+**Registros**
+
+
 La arquitectura ARMv6 presenta un conjunto de 17 registros (16 principales más
 uno de estado) de 32 bits cada uno.
 
@@ -50,7 +52,9 @@ siguientes:
 - **C.** Indica acarreo en las operaciones aritméticas.
 - **V.** Desbordamiento aritmético.
 
-#### **Lenguaje Ensamblador** 
+**Lenguaje Ensamblador** 
+
+
 El ensamblador es un lenguaje de bajo nivel que permite un control directo de
 la CPU y todos los elementos asociados. Cada línea de un programa ensamblador
 consta de una instrucción del procesador y la posición que ocupan los datos de esa
@@ -72,7 +76,9 @@ situaciones:
 - Cuando se requiera una gran velocidad de proceso.
 - Para utilización y aprovechamiento de dispositivos y recursos del sistema.
 
-#### **Entorno**
+ **Entorno**
+ 
+ 
 Los pasos habituales para hacer un programa (en cualquier lenguaje) son los
 siguientes: lo primero es escribir el programa en el lenguaje fuente mediante un editor de programas. El resultado es un fichero en un lenguaje que puede entender el
 usuario, pero no la máquina. Para traducirlo a lenguaje máquina hay que utilizar
@@ -83,7 +89,9 @@ las librerías del lenguaje. El encargado de unir el código del programa con el
 de estas librerías es un programa llamado montador (linker) que genera el programa
 ejecutable
 
-#### **Caracteristicas**
+ **Caracteristicas**
+ 
+ 
 La principal característica de un módulo fuente en ensamblador es que existe
 una clara separación entre las instrucciones y los datos. La estructura más general
 de un módulo fuente es:
