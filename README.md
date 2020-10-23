@@ -152,4 +152,20 @@ preprocesador, a diferencia de las etiquetas que pertenecen al del ensamblador. 
 especifican con las directivas .macro y .equ respectivamente y permiten que el código
 sea más legible y menos repetitivo.
 
-[enlace en línea](https://fulldevelopersite.files.wordpress.com/2015/10/sin-tc3adtulo.png)
+
+**Instrucciones**
+
+- Instrucciones de transferencia de datos Mueven información entre registros
+y posiciones de memoria. En la arquitectura ARMv6 no existen puertos ya
+que la E/S está mapeada en memoria. Pertenecen a este grupo las siguientes
+instrucciones: mov, ldr, str, ldm, stm, push, pop.
+- Instrucciones aritméticas. Realizan operaciones aritméticas sobre números binarios o BCD. Son instrucciones de este grupo add, cmp, adc, sbc, mul.
+- Instrucciones de manejo de bits. Realizan operaciones de desplazamiento, rotación y lógicas sobre registros o posiciones de memoria. Están en este grupo
+las instrucciones: and, tst, eor, orr, LSL, LSR, ASR, ROR, RRX.
+- Instrucciones de transferencia de control. Se utilizan para controlar el flujo de
+ejecución de las instrucciones del programa. Tales como b, bl, bx, blx y sus
+variantes condicionales.
+
+
+
+
