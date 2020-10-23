@@ -166,6 +166,25 @@ las instrucciones: and, tst, eor, orr, LSL, LSR, ASR, ROR, RRX.
 ejecución de las instrucciones del programa. Tales como b, bl, bx, blx y sus
 variantes condicionales.
 
+**Directivas**
 
+
+Las directivas son expresiones que aparecen en el módulo fuente e indican al
+compilador que realice determinadas tareas en el proceso de compilación. Son fácilmente distinguibles de las instrucciones porque siempre comienzan con un punto.
+El uso de directivas es aplicable sólo al entorno del compilador, por tanto varían
+de un compilador a otro y para diferentes versiones de un mismo compilador. Las
+directivas más frecuentes en el as son:
+
+- **Directivas de asignación:** Se utilizan para dar valores a las constantes o reservar
+posiciones de memoria para las variables (con un posible valor inicial). .byte,
+.hword, .word, .ascii, .asciz, .zero y .space son directivas que indican
+al compilador que reserve memoria para las variables del tipo indicado.
+
+- **Directivas de control:** .text y .data sirven para delimitar las distintas secciones de nuestro módulo. .align alineamiento es para alinear el siguiente dato,
+rellenando con ceros, de tal forma que comience en una dirección múltiplos
+del número que especifiquemos en alineamiento, normalmente potencia de 2.
+Si no especificamos alineamiento por defecto toma el valor de 4 (alineamiento a palabra).
+
+- **
 
 
