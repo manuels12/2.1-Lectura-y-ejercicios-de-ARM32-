@@ -16,5 +16,4 @@ bx lr
 puntero_var1 : .word var1
 puntero_var2 : .word var2
 puntero_var3 : .word var3
-
-~~~~
+~~~
