@@ -83,7 +83,7 @@ las librerías del lenguaje. El encargado de unir el código del programa con el
 de estas librerías es un programa llamado montador (linker) que genera el programa
 ejecutable
 
-###### **Caracteristicas**
+##### **Caracteristicas**
 La principal característica de un módulo fuente en ensamblador es que existe
 una clara separación entre las instrucciones y los datos. La estructura más general
 de un módulo fuente es:
