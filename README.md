@@ -91,7 +91,7 @@ de estas librerías es un programa llamado montador (linker) que genera el progr
 ejecutable.
 
 
-[](https://fulldevelopersite.files.wordpress.com/2015/10/sin-tc3adtulo.png)
+[Imagen](https://fulldevelopersite.files.wordpress.com/2015/10/sin-tc3adtulo.png)
 
  **Caracteristicas**
  
