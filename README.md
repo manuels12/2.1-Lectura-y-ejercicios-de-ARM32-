@@ -270,6 +270,35 @@ cuales condicionamos si se salta o no dependiendo del estado de los flags. Estas
 condiciones se pueden añadir a cualquier otra instrucción, aunque la mayoría de las
 veces lo que nos interesa es controlar el flujo del programa y así ejecutar o no un
 grupo de instrucciones dependiendo del resultado de una operación (reflejado en los flags).
+Las instrucciones de salto en la arquitectura ARM abarcan una zona muy extensa, hasta 64 Mb (32 Mb hacia adelante y otros 32 Mb hacia atrás). Estos límites
+podemos justificarlos atendiendo al formato de instrucción que podemos ver en el
+apéndice A. El código de operación ocupa 8 de los 32 bits, dejándonos 24 bits para
+codificar el destino del salto.
+
+
+**Estructuras de control de alto nivel**
+
+
+En este punto veremos cómo se traducen a ensamblador las estructuras de control
+de alto nivel que definen un bucle (for, while, . . . ), así como las condicionales
+(if-else).
+Las estructuras for y while se pueden ejecutar un mínimo de 0 iteraciones (si
+la primera vez no se cumple la condición). La traducción de las estructuras for y
+while se puede ver en los listados **2.1 y 2.2.**
+Para programar en ensamblador estas estructuras se utilizan instrucciones de
+salto condicional. Previo a la instrucción de salto es necesario evaluar la condición
+del bucle o de la sentencia if, mediante instrucciones aritméticas o lógicas, con el
+fin de actualizar los flags de estado. 
+
+
+**Compilación a ensamblador** 
+
+
+Para acabar la teoría veamos cómo trabaja un compilador de C real. Normalmente los compiladores crean código compilado (archivos .o) en un único paso. En
+el caso de gcc este proceso se hace en dos fases: en una primera se pasa de C a
+ensamblador, y en una segunda de ensambladador a código compilado (código máquina). Lo interesante es que podemos interrumpir justo después de la compilación
+y ver con un editor el aspecto que tiene el código ensamblador generado a partir del
+código fuente en C.
 
 
 
