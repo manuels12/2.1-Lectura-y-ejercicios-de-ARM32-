@@ -214,4 +214,9 @@ donde se emplea la memoria como almacén temporal. En nuestro caso disponemos
 de suficientes registros, por lo que podemos hacer el procesamiento sin necesidad de
 interactuar con la memoria, lo que por otro lado también es más rápido.
 
+- **Direccionamiento inmediato.** El operando fuente es una constante, formando
+parte de la instrucción.
+
+- **Direccionamiento inmediato con desplazamiento o rotación.** Es una variante del anterior en la cual se permiten operaciones intermedias sobre los registros.
+
 
