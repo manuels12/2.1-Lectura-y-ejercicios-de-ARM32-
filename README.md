@@ -301,6 +301,8 @@ y ver con un editor el aspecto que tiene el código ensamblador generado a parti
 código fuente en C.
 
 
+* * *
+
 
 
 
