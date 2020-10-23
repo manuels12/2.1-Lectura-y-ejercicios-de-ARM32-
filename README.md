@@ -96,7 +96,7 @@ de las cadenas. Alinear significa rellenar con ceros el final de un dato para qu
 el siguiente dato comience en una dirección múltiplo de 4 (con los dos bits
 menos significativos a cero). Los datos son modificables.
 
--**Sección de código.** Se indica con la directiva .text, y sólo puede contener código
+- **Sección de código.** Se indica con la directiva .text, y sólo puede contener código
 o datos no modificables. Como todas las instrucciones son de 32 bits no hay
 que tener especial cuidado en que estén alineadas. Si tratamos de escribir en
 esta zona el ensamblador nos mostrará un mensaje de error.
