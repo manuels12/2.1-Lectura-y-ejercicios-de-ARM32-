@@ -198,3 +198,19 @@ que a lo largo de un programa realizamos varias veces la operación n
 * * *
 ### **CAPITULO 2**
 * * *
+
+### **Modos de direccionamiento del ARM**
+
+
+En la arquitectura ARM los accesos a memoria se hacen mediante instrucciones
+específicas ldr y str (luego veremos las variantes ldm, stm y las preprocesadas push y pop). El resto de instrucciones toman operandos desde registros o valores inmediatos, sin excepciones. En este caso la arquitectura nos fuerza a que trabajemos de
+un modo determinado: primero cargamos los registros desde memoria, luego procesamos el valor de estos registros con el amplio abanico de instrucciones del ARM,
+para finalmente volcar los resultados desde registros a memoria. Existen otras arquitecturas como la Intel x86, donde las instrucciones de procesado nos permiten
+leer o escribir directamente de memoria. Ningún método es mejor que otro, todo
+es cuestión de diseño. Normalmente se opta por direccionamiento a memoria en
+instrucciones de procesado en arquitecturas con un número reducido de registros,
+donde se emplea la memoria como almacén temporal. En nuestro caso disponemos
+de suficientes registros, por lo que podemos hacer el procesamiento sin necesidad de
+interactuar con la memoria, lo que por otro lado también es más rápido.
+
+
