@@ -183,8 +183,18 @@ al compilador que reserve memoria para las variables del tipo indicado.
 - **Directivas de control:** .text y .data sirven para delimitar las distintas secciones de nuestro módulo. .align alineamiento es para alinear el siguiente dato,
 rellenando con ceros, de tal forma que comience en una dirección múltiplos
 del número que especifiquemos en alineamiento, normalmente potencia de 2.
-Si no especificamos alineamiento por defecto toma el valor de 4 (alineamiento a palabra).
+Si no especificamos alineamiento por defecto toma el valor de 4 (alineamiento a palabra) .include para incluir un archivo fuente dentro del actual. .global hace visible
+al enlazador el símbolo que hemos definido con la etiqueta del mismo nombre.
 
-- **
+- **Directivas de operando:** Se aplican a los datos en tiempo de compilación. En
+general, incluyen las operaciones lógicas &, |, ∼, aritméticas +, -, *, /, % y de
+desplazamiento <, >, <<, >>.
+
+- **Directivas de Macros:** Una .macro es un conjunto de sentencias en ensamblador
+(directivas e instrucciones) que pueden aparecer varias veces repetidas en un programa con algunas modificaciones (opcionales). Por ejemplo, supongamos
+que a lo largo de un programa realizamos varias veces la operación n
+2+1 donde n y el resultado son registros.
 
 
+### **CAPITULO 2**
+* * *
