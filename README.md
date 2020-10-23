@@ -50,7 +50,7 @@ siguientes:
 - **C.** Indica acarreo en las operaciones aritméticas.
 - **V.** Desbordamiento aritmético.
 
-##### **Lenguajes Ensamblador** 
+##### **Lenguaje Ensamblador** 
 El ensamblador es un lenguaje de bajo nivel que permite un control directo de
 la CPU y todos los elementos asociados. Cada línea de un programa ensamblador
 consta de una instrucción del procesador y la posición que ocupan los datos de esa
@@ -71,5 +71,16 @@ situaciones:
 - Operaciones que se repitan un número elevado de veces.
 - Cuando se requiera una gran velocidad de proceso.
 - Para utilización y aprovechamiento de dispositivos y recursos del sistema.
+
+**Entorno**
+Los pasos habituales para hacer un programa (en cualquier lenguaje) son los
+siguientes: lo primero es escribir el programa en el lenguaje fuente mediante un editor de programas. El resultado es un fichero en un lenguaje que puede entender el
+usuario, pero no la máquina. Para traducirlo a lenguaje máquina hay que utilizar
+un programa traductor. Éste genera un fichero con la traducción de dicho programa,
+pero todavía no es un programa ejecutable. Un fichero ejecutable contiene el programa traducido más una serie de códigos que debe tener todo programa que vaya a ser
+ejecutado en una máquina determinada. Entre estos códigos comunes se encuentran
+las librerías del lenguaje. El encargado de unir el código del programa con el código
+de estas librerías es un programa llamado montador (linker) que genera el programa
+ejecutable
 
 
