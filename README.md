@@ -114,3 +114,29 @@ al ensamblador, como delimitar secciones, insertar datos, crear macros, constant
 simbólicas, etc... Las instrucciones se aplican en tiempo de ejecución mientras que
 las directivas se aplican en tiempo de ensamblado.
 
+
+**Datos**
+
+
+Los datos se pueden representar de distintas maneras. Para representar números
+tenemos 4 bases. La más habitual es en su forma decimal, la cual no lleva ningún
+delimitador especial. Luego tenemos otra muy útil que es la representación hexadecimal, que indicaremos con el prefijo 0x. Otra interesante es la binaria, que emplea
+el prefijo 0b antes del número en binario. La cuarta y última base es la octal, que
+usaremos en raras ocasiones y se especifica con el prefijo 0. Sí, un cero a la izquierda
+de cualquier valor convierte en octal dicho número. Por ejemplo 015 equivale a 13 en
+decimal. Todas estas bases pueden ir con un signo menos delante, codificando el valor
+negativo en complemento a dos. Para representar carácteres y cadenas emplearemos
+las comillas simples y las comillas dobles respectivamente.
+
+
+**Símbolos**
+
+
+Como las etiquetas se pueden ubicar tanto en la sección de datos como en la de
+código, la versatilidad que nos dan las mismas es enorme. En la zona de datos, las
+etiquetas pueden representar variables, constantes y cadenas. En la zona de código
+podemos usar etiquetas de salto, funciones y punteros a zona de datos.
+Las macros y las constantes simbólicas son símbolos cuyo ámbito pertenece al
+preprocesador, a diferencia de las etiquetas que pertenecen al del ensamblador. Se
+especifican con las directivas .macro y .equ respectivamente y permiten que el código
+sea más legible y menos repetitivo.
