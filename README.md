@@ -195,6 +195,6 @@ desplazamiento <, >, <<, >>.
 que a lo largo de un programa realizamos varias veces la operación n
 2+1 donde n y el resultado son registros.
 
-
+* * *
 ### **CAPITULO 2**
 * * *
