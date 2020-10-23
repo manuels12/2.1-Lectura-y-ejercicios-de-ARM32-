@@ -219,4 +219,23 @@ parte de la instrucción.
 
 - **Direccionamiento inmediato con desplazamiento o rotación.** Es una variante del anterior en la cual se permiten operaciones intermedias sobre los registros.
 
+- **Direccionamiento a memoria, sin actualizar registro puntero.** Es la forma
+más sencilla y admite 4 variantes. Después del acceso a memoria ningún registro implicado en el cálculo de la dirección se modifica.Simplemente añade (o sustrae) un valor inmediato al registro dado para
+calcular la dirección. Es muy útil para acceder a elementos fijos de un
+array, ya que el desplazamiento es constante.
+
+- **Direccionamiento a memoria, actualizando registro puntero.** En este modo
+de direccionamiento, el registro que genera la dirección se actualiza con la propia dirección. De esta forma podemos recorrer un array con un sólo registro
+sin necesidad de hacer el incremento del puntero en una instrucción aparte.
+Hay dos métodos de actualizar dicho registro, antes de ejecutar la instrucción
+(preindexado) o después de la misma (postindexado).
+
+
+**Tipos de Datos**
+Tipos de datos básicos. En la siguiente tabla se recogen los diferentes tipos de datos básicos que podrán aparecer en los ejemplos, así como su
+tamaño y rango de representación.
+
+
+[Imagen](https://i1.wp.com/rduinostar.com/wp-content/uploads/2012/10/Tipos-de-Variables-Arduino.jpg)
+
 
