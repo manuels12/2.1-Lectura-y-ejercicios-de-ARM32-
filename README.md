@@ -232,10 +232,44 @@ Hay dos métodos de actualizar dicho registro, antes de ejecutar la instrucción
 
 
 **Tipos de Datos**
-Tipos de datos básicos. En la siguiente tabla se recogen los diferentes tipos de datos básicos que podrán aparecer en los ejemplos, así como su
+
+
+**Tipos de datos básicos.** En la siguiente tabla se recogen los diferentes tipos de datos básicos que podrán aparecer en los ejemplos, así como su
 tamaño y rango de representación.
 
 
 [Imagen](https://i1.wp.com/rduinostar.com/wp-content/uploads/2012/10/Tipos-de-Variables-Arduino.jpg)
+
+
+**Punteros.** Un puntero siempre ocupa 32 bits y contiene una dirección de memoria.
+En ensamblador no tienen tanta utilidad como en C, ya que disponemos de registros
+de sobra y es más costoso acceder a las variables a través de los punteros que directamente. 
+
+**Vectores.** Todos los elementos de un vector se almacenan en un único bloque de
+memoria a partir de una dirección determinada. Los diferentes elementos se almacenan en posiciones consecutivas, de manera que el elemento i está entre los i-1 e
+i+1.  Los vectores están definidos siempre a partir de la posición 0. El
+propio índice indica cuántos elementos hemos de desplazarnos respecto del comienzo
+del primer elemento (para acceder al elemento cero hemos de saltarnos 0 elementos,
+para acceder al elemento 1 hemos de saltarnos un elemento, etc...; En general, para
+acceder al elemento con índice i hemos de saltarnos los i elementos anteriores).
+
+**Matrices bidimensionales.** Una matriz bidimensional de N×M elementos se almacena en un único bloque de memoria. Interpretaremos una matriz de N×M como
+una matriz con N filas de M elementos cada una. Si cada elemento de la matriz
+ocupa B bytes, la matriz ocupará un bloque de M ×N ×B bytes.
+
+
+**Instrucciones de salto.** 
+
+
+Las instrucciones de salto pueden producir saltos incondicionales (b y bx) o
+saltos condicionales. Cuando saltamos a una etiqueta empleamos b, mientras que
+si queremos saltar a un registro lo hacemos con bx. La variante de registro bx la
+solemos usar como instrucción de retorno de subrutina, raramente tiene otros usos.
+En los saltos condicionales añadimos dos o tres letras a la (b/bx), mediante las
+cuales condicionamos si se salta o no dependiendo del estado de los flags. Estas
+condiciones se pueden añadir a cualquier otra instrucción, aunque la mayoría de las
+veces lo que nos interesa es controlar el flujo del programa y así ejecutar o no un
+grupo de instrucciones dependiendo del resultado de una operación (reflejado en los flags).
+
 
 
